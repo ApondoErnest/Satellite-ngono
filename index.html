@@ -31,7 +31,8 @@
 
     <a href="#main-content" class="sn-skip-link">Aller au contenu principal</a>
 
-    <div class="sn-topbar d-none d-lg-block">
+    <div class="sn-site-chrome">
+<div class="sn-topbar d-none d-lg-block">
         <div class="container">
             <div class="sn-topbar__inner">
                 <div class="sn-topbar__left">
@@ -51,7 +52,7 @@
         </div>
     </div>
 
-    <header class="sn-header sticky-top">
+    <header class="sn-header">
         <nav class="navbar navbar-expand-lg navbar-light" aria-label="Navigation principale">
             <div class="container">
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
@@ -76,6 +77,9 @@
             </div>
         </nav>
     </header>
+
+
+    </div>
     <script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -156,71 +160,115 @@
     <!-- Carousel End -->
 
 
-        <section class="sn-section sn-section--surface sn-agencies-grid" aria-labelledby="agences-title">
+        <section class="sn-section sn-agencies-section" aria-labelledby="agences-title">
         <div class="container">
-            <div class="sn-section-header">
+            <div class="sn-section-header text-center">
                 <span class="sn-section-label">Nos agences</span>
                 <h2 id="agences-title">Quatre centres au Cameroun</h2>
                 <p class="lead">Retrouvez Satellite Ngono près de chez vous pour votre contrôle technique.</p>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <article class="sn-card sn-agency-card">
-                        <div class="sn-agency-card__media">
-                            <img src="img/agence-yaounde.jpg" alt="Agence de Yaoundé">
-                            <h3 class="sn-agency-card__city">Yaoundé</h3>
+                <div class="col-md-6">
+                    <article class="sn-agency-card sn-agency-card--pro">
+                        <div class="sn-agency-card__visual">
+                            <img src="img/agence-yaounde.jpg" alt="Centre Satellite Ngono à Yaoundé" loading="lazy">
+                            <span class="sn-agency-card__index" aria-hidden="true">01</span>
+                            <div class="sn-agency-card__headline">
+                                <h3>Yaoundé</h3>
+                                <span class="sn-agency-card__region">Région du Centre</span>
+                            </div>
                         </div>
-                        <div class="sn-agency-card__body">
-                            <ul class="sn-agency-card__hours">
-                                <li><i class="far fa-clock"></i><span>Lundi - Vendredi : 07H30 - 21H00</span></li>
-                                <li><i class="far fa-calendar-alt"></i><span>Samedi - Jours fériés : 07H30 - 15H00</span></li>
-                            </ul>
-                            <p class="sn-agency-card__address">Boulevard Présidentiel Etoudi, entre le feu tricolore de Tongolo et le Carrefour Présidence Etoudi</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <article class="sn-card sn-agency-card">
-                        <div class="sn-agency-card__media">
-                            <img src="img/agence-douala.jpg" alt="Agence de Douala">
-                            <h3 class="sn-agency-card__city">Douala</h3>
-                        </div>
-                        <div class="sn-agency-card__body">
-                            <ul class="sn-agency-card__hours">
-                                <li><i class="far fa-clock"></i><span>Lundi - Vendredi : 07H30 - 20H00</span></li>
-                                <li><i class="far fa-calendar-alt"></i><span>Samedi - Jours fériés : 07H30 - 15H00</span></li>
-                            </ul>
-                            <p class="sn-agency-card__address">Bonaberi nouvelle route, en face Mosquée Tanko, à quelques mètres du Cercle Municipal</p>
+                        <div class="sn-agency-card__content">
+                            <div class="sn-agency-card__schedule">
+                                <div class="sn-agency-card__slot">
+                                    <span class="sn-agency-card__slot-label"><i class="far fa-clock" aria-hidden="true"></i> Semaine</span>
+                                    <span class="sn-agency-card__slot-value">Lun — Ven : 07H30 — 21H00</span>
+                                </div>
+                                <div class="sn-agency-card__slot">
+                                    <span class="sn-agency-card__slot-label"><i class="far fa-calendar-alt" aria-hidden="true"></i> Week-end</span>
+                                    <span class="sn-agency-card__slot-value">Sam &amp; jours fériés : 07H30 — 15H00</span>
+                                </div>
+                            </div>
+                            <p class="sn-agency-card__address"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Boulevard Présidentiel Etoudi, entre le feu tricolore de Tongolo et le Carrefour Présidence Etoudi</p>
+                            <a href="contact.html" class="sn-agency-card__cta">Prendre rendez-vous <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </article>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <article class="sn-card sn-agency-card">
-                        <div class="sn-agency-card__media">
-                            <img src="img/agence-garoua.jpg" alt="Agence de Garoua">
-                            <h3 class="sn-agency-card__city">Garoua</h3>
+                <div class="col-md-6">
+                    <article class="sn-agency-card sn-agency-card--pro">
+                        <div class="sn-agency-card__visual">
+                            <img src="img/agence-douala.jpg" alt="Centre Satellite Ngono à Douala" loading="lazy">
+                            <span class="sn-agency-card__index" aria-hidden="true">02</span>
+                            <div class="sn-agency-card__headline">
+                                <h3>Douala</h3>
+                                <span class="sn-agency-card__region">Région du Littoral</span>
+                            </div>
                         </div>
-                        <div class="sn-agency-card__body">
-                            <ul class="sn-agency-card__hours">
-                                <li><i class="far fa-clock"></i><span>Lundi - Vendredi : 07H30 - 17H00</span></li>
-                                <li><i class="far fa-calendar-alt"></i><span>Samedi - Jours fériés : 07H30 - 15H00</span></li>
-                            </ul>
-                            <p class="sn-agency-card__address">Non loin de Tractafric</p>
+                        <div class="sn-agency-card__content">
+                            <div class="sn-agency-card__schedule">
+                                <div class="sn-agency-card__slot">
+                                    <span class="sn-agency-card__slot-label"><i class="far fa-clock" aria-hidden="true"></i> Semaine</span>
+                                    <span class="sn-agency-card__slot-value">Lun — Ven : 07H30 — 20H00</span>
+                                </div>
+                                <div class="sn-agency-card__slot">
+                                    <span class="sn-agency-card__slot-label"><i class="far fa-calendar-alt" aria-hidden="true"></i> Week-end</span>
+                                    <span class="sn-agency-card__slot-value">Sam &amp; jours fériés : 07H30 — 15H00</span>
+                                </div>
+                            </div>
+                            <p class="sn-agency-card__address"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Bonaberi nouvelle route, en face Mosquée Tanko, à quelques mètres du Cercle Municipal</p>
+                            <a href="contact.html" class="sn-agency-card__cta">Prendre rendez-vous <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </article>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <article class="sn-card sn-agency-card">
-                        <div class="sn-agency-card__media">
-                            <img src="img/agence-bafoussam.jpg" alt="Agence de Bafoussam">
-                            <h3 class="sn-agency-card__city">Bafoussam</h3>
+                <div class="col-md-6">
+                    <article class="sn-agency-card sn-agency-card--pro">
+                        <div class="sn-agency-card__visual">
+                            <img src="img/agence-garoua.jpg" alt="Centre Satellite Ngono à Garoua" loading="lazy">
+                            <span class="sn-agency-card__index" aria-hidden="true">03</span>
+                            <div class="sn-agency-card__headline">
+                                <h3>Garoua</h3>
+                                <span class="sn-agency-card__region">Région du Nord</span>
+                            </div>
                         </div>
-                        <div class="sn-agency-card__body">
-                            <ul class="sn-agency-card__hours">
-                                <li><i class="far fa-clock"></i><span>Lundi - Vendredi : 07H30 - 17H00</span></li>
-                                <li><i class="far fa-calendar-alt"></i><span>Samedi - Jours fériés : 07H30 - 15H00</span></li>
-                            </ul>
-                            <p class="sn-agency-card__address">Mbouo - Juste après le pont Mvem</p>
+                        <div class="sn-agency-card__content">
+                            <div class="sn-agency-card__schedule">
+                                <div class="sn-agency-card__slot">
+                                    <span class="sn-agency-card__slot-label"><i class="far fa-clock" aria-hidden="true"></i> Semaine</span>
+                                    <span class="sn-agency-card__slot-value">Lun — Ven : 07H30 — 17H00</span>
+                                </div>
+                                <div class="sn-agency-card__slot">
+                                    <span class="sn-agency-card__slot-label"><i class="far fa-calendar-alt" aria-hidden="true"></i> Week-end</span>
+                                    <span class="sn-agency-card__slot-value">Sam &amp; jours fériés : 07H30 — 15H00</span>
+                                </div>
+                            </div>
+                            <p class="sn-agency-card__address"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Non loin de Tractafric</p>
+                            <a href="contact.html" class="sn-agency-card__cta">Prendre rendez-vous <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="sn-agency-card sn-agency-card--pro">
+                        <div class="sn-agency-card__visual">
+                            <img src="img/agence-bafoussam2.jpg" alt="Centre Satellite Ngono à Bafoussam" loading="lazy">
+                            <span class="sn-agency-card__index" aria-hidden="true">04</span>
+                            <div class="sn-agency-card__headline">
+                                <h3>Bafoussam</h3>
+                                <span class="sn-agency-card__region">Région de l'Ouest</span>
+                            </div>
+                        </div>
+                        <div class="sn-agency-card__content">
+                            <div class="sn-agency-card__schedule">
+                                <div class="sn-agency-card__slot">
+                                    <span class="sn-agency-card__slot-label"><i class="far fa-clock" aria-hidden="true"></i> Semaine</span>
+                                    <span class="sn-agency-card__slot-value">Lun — Ven : 07H30 — 17H00</span>
+                                </div>
+                                <div class="sn-agency-card__slot">
+                                    <span class="sn-agency-card__slot-label"><i class="far fa-calendar-alt" aria-hidden="true"></i> Week-end</span>
+                                    <span class="sn-agency-card__slot-value">Sam &amp; jours fériés : 07H30 — 15H00</span>
+                                </div>
+                            </div>
+                            <p class="sn-agency-card__address"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Mbouo — Juste après le pont Mvem</p>
+                            <a href="contact.html" class="sn-agency-card__cta">Prendre rendez-vous <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </article>
                 </div>
@@ -528,131 +576,108 @@
     <!-- Booking End -->
 
 
-    <!-- Team Start -->
-<div class="container-xxl py-5 sn-team">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-primary text-uppercase">Notre équipe</h6>
-            <h1 class="mb-5">Une équipe dynamique pour vous servir</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/team-1.png" alt="">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href="https://facebook.com" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href="https://twitter.com" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href="https://instagram.com" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">TCHANGA Darryl</h5>
-                        <small>Directeur Général</small>
-                    </div>
-                </div>
+    <section class="sn-section sn-team-section sn-team" aria-labelledby="team-section-title">
+        <div class="container">
+            <div class="sn-section-header text-center">
+                <span class="sn-section-label">Notre équipe</span>
+                <h2 id="team-section-title">Une équipe dynamique pour vous servir</h2>
+                <p class="lead">Des professionnels engagés pour la sécurité routière et la qualité de service dans chaque centre.</p>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href="https://facebook.com" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href="https://twitter.com" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href="https://instagram.com" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
+            <div class="row g-4 justify-content-center sn-team__grid">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <article class="sn-team-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="sn-team-card__media">
+                            <img src="img/team-1-opt.jpg" alt="TCHANGA Darryl, Directeur Général" loading="lazy" width="400" height="500">
+                            <div class="sn-team-card__overlay" aria-hidden="true">
+                                <a class="sn-team-card__social" href="https://www.facebook.com/satellitengonoofficiel?mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook Satellite Ngono"><i class="fab fa-facebook-f"></i></a>
+                                <a class="sn-team-card__social" href="https://www.linkedin.com/company/satellite-ngono/" target="_blank" rel="noopener" aria-label="LinkedIn Satellite Ngono"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">NGO BIKOI Marguérite</h5>
-                        <small>Directrice Générale Adjointe</small>
-                    </div>
+                        <div class="sn-team-card__body">
+                            <h3 class="sn-team-card__name">TCHANGA Darryl</h3>
+                            <p class="sn-team-card__role">Directeur Général</p>
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/team-3.png" alt="Nanci Laure">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href="https://facebook.com" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href="https://twitter.com" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href="https://instagram.com" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <article class="sn-team-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="sn-team-card__media">
+                            <img src="img/team-2.jpg" alt="NGO BIKOI Marguérite, Directrice Générale Adjointe" loading="lazy" width="400" height="500">
+                            <div class="sn-team-card__overlay" aria-hidden="true">
+                                <a class="sn-team-card__social" href="https://www.facebook.com/satellitengonoofficiel?mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook Satellite Ngono"><i class="fab fa-facebook-f"></i></a>
+                                <a class="sn-team-card__social" href="https://www.linkedin.com/company/satellite-ngono/" target="_blank" rel="noopener" aria-label="LinkedIn Satellite Ngono"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">Nanci Laure</h5>
-                        <small>Chef de Centre - Yaoundé</small>
-                    </div>
+                        <div class="sn-team-card__body">
+                            <h3 class="sn-team-card__name">NGO BIKOI Marguérite</h3>
+                            <p class="sn-team-card__role">Directrice Générale Adjointe</p>
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/team-4.png" alt="FADIMATOU MAMADOU">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href="https://facebook.com" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href="https://twitter.com" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href="https://instagram.com" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <article class="sn-team-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="sn-team-card__media">
+                            <img src="img/team-3-opt.jpg" alt="Nanci Laure, Chef de Centre Yaoundé" loading="lazy" width="400" height="500">
+                            <div class="sn-team-card__overlay" aria-hidden="true">
+                                <a class="sn-team-card__social" href="https://www.facebook.com/satellitengonoofficiel?mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook Satellite Ngono"><i class="fab fa-facebook-f"></i></a>
+                                <a class="sn-team-card__social" href="https://www.linkedin.com/company/satellite-ngono/" target="_blank" rel="noopener" aria-label="LinkedIn Satellite Ngono"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">FADIMATOU MAMADOU</h5>
-                        <small>Chef de Centre - Garoua</small>
-                    </div>
+                        <div class="sn-team-card__body">
+                            <h3 class="sn-team-card__name">Nanci Laure</h3>
+                            <p class="sn-team-card__role">Chef de Centre — Yaoundé</p>
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/team-6.png" alt="Poumeleu Constant">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href="https://facebook.com" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href="https://twitter.com" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href="https://instagram.com" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <article class="sn-team-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="sn-team-card__media">
+                            <img src="img/team-4.png" alt="FADIMATOU MAMADOU, Chef de Centre Garoua" loading="lazy" width="400" height="500">
+                            <div class="sn-team-card__overlay" aria-hidden="true">
+                                <a class="sn-team-card__social" href="https://www.facebook.com/satellitengonoofficiel?mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook Satellite Ngono"><i class="fab fa-facebook-f"></i></a>
+                                <a class="sn-team-card__social" href="https://www.linkedin.com/company/satellite-ngono/" target="_blank" rel="noopener" aria-label="LinkedIn Satellite Ngono"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">Poumeleu Constant</h5>
-                        <small>Chef de Centre - Bafoussam</small>
-                    </div>
+                        <div class="sn-team-card__body">
+                            <h3 class="sn-team-card__name">FADIMATOU MAMADOU</h3>
+                            <p class="sn-team-card__role">Chef de Centre — Garoua</p>
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.0s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/team-5.png" alt="">
-                        <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                            <a class="btn btn-square mx-1" href="https://facebook.com" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href="https://twitter.com" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href="https://instagram.com" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <article class="sn-team-card wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="sn-team-card__media">
+                            <img src="img/team-6-opt.jpg" alt="Poumeleu Constant, Chef de Centre Bafoussam" loading="lazy" width="400" height="500">
+                            <div class="sn-team-card__overlay" aria-hidden="true">
+                                <a class="sn-team-card__social" href="https://www.facebook.com/satellitengonoofficiel?mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook Satellite Ngono"><i class="fab fa-facebook-f"></i></a>
+                                <a class="sn-team-card__social" href="https://www.linkedin.com/company/satellite-ngono/" target="_blank" rel="noopener" aria-label="LinkedIn Satellite Ngono"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">NANA Robert</h5>
-                        <small>Contrôleur de gestion</small>
-                    </div>
+                        <div class="sn-team-card__body">
+                            <h3 class="sn-team-card__name">Poumeleu Constant</h3>
+                            <p class="sn-team-card__role">Chef de Centre — Bafoussam</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <article class="sn-team-card wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="sn-team-card__media">
+                            <img src="img/team-5-opt.jpg" alt="NANA Robert, Contrôleur de gestion" loading="lazy" width="400" height="500">
+                            <div class="sn-team-card__overlay" aria-hidden="true">
+                                <a class="sn-team-card__social" href="https://www.facebook.com/satellitengonoofficiel?mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook Satellite Ngono"><i class="fab fa-facebook-f"></i></a>
+                                <a class="sn-team-card__social" href="https://www.linkedin.com/company/satellite-ngono/" target="_blank" rel="noopener" aria-label="LinkedIn Satellite Ngono"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="sn-team-card__body">
+                            <h3 class="sn-team-card__name">NANA Robert</h3>
+                            <p class="sn-team-card__role">Contrôleur de gestion</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </section>
+
     <!-- Team End -->
 
 

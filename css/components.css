@@ -2,6 +2,19 @@
  * Satellite Ngono — shared UI components
  */
 
+/* ---- Sticky site chrome (topbar + header) ---- */
+.sn-site-chrome {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+.sn-site-chrome.is-scrolled .sn-header {
+    box-shadow: 0 4px 16px rgba(10, 26, 69, 0.12);
+}
+.sn-site-chrome .sn-header {
+    background: var(--white);
+}
+
 /* ---- Topbar ---- */
 .sn-topbar {
     background: var(--secondary);
@@ -349,24 +362,111 @@
     color: var(--white);
 }
 
-/* ---- Team ---- */
-.sn-team .team-item {
+/* ---- Team (professional cards) ---- */
+.sn-team-section {
+    background: var(--surface);
+}
+.sn-team-card {
+    height: 100%;
+    background: var(--white);
+    border: 1px solid var(--border);
     border-radius: var(--radius-md);
     overflow: hidden;
-    border: 1px solid var(--border);
-    transition: box-shadow 0.25s, transform 0.25s;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
-.sn-team .team-item:hover {
+.sn-team-card:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-4px);
 }
-.sn-team .team-overlay {
-    background: rgba(10, 26, 69, 0.75);
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+.sn-team-card__media {
+    position: relative;
+    aspect-ratio: 1 / 1.15;
+    overflow: hidden;
+    background: linear-gradient(160deg, #e8ecf4 0%, #d4dae8 100%);
 }
-.sn-team .team-item:hover .team-overlay {
-    transform: translateY(0);
+.sn-team-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 8%;
+    transform: scale(0.88);
+    transform-origin: center center;
+    filter: contrast(1.06) brightness(1.04) saturate(0.92);
+    transition: transform 0.4s ease, filter 0.3s ease;
+}
+.sn-team-card:hover .sn-team-card__media img {
+    transform: scale(0.92);
+    filter: contrast(1.08) brightness(1.06) saturate(0.95);
+}
+.sn-team-card__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    background: linear-gradient(to top, rgba(10, 26, 69, 0.55), transparent 45%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.sn-team-card:hover .sn-team-card__overlay {
+    opacity: 1;
+}
+.sn-team-card__social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.sn-team-card__social:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+.sn-team-card__body {
+    padding: 1.25rem 1rem 1.5rem;
+    text-align: center;
+}
+.sn-team-card__name {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 0 0 0.35rem;
+    line-height: 1.3;
+}
+.sn-team-card__role {
+    margin: 0;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 0.02em;
+}
+@media (min-width: 992px) {
+    .sn-team-card__body {
+        padding: 0.85rem 0.5rem 1rem;
+    }
+    .sn-team-card__name {
+        font-size: 0.875rem;
+    }
+    .sn-team-card__role {
+        font-size: 0.7rem;
+        line-height: 1.35;
+    }
+    .sn-team-card__social {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
 }
 
 /* ---- Clients / logos ---- */
@@ -581,67 +681,141 @@
     top: 1rem;
 }
 
-/* ---- Agency cards (enhanced) ---- */
-.sn-agencies-grid .sn-agency-card {
-    padding: 0;
-    overflow: hidden;
-    border-top: 4px solid var(--primary);
-    text-align: left;
+/* ---- Agency cards (professional) ---- */
+.sn-agencies-section {
+    background: linear-gradient(180deg, var(--surface) 0%, var(--white) 100%);
 }
-.sn-agency-card__media {
+.sn-agency-card--pro {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.sn-agency-card--pro:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+.sn-agency-card__visual {
     position: relative;
-    height: 140px;
+    height: 165px;
     overflow: hidden;
+    background: #e8ecf4;
 }
-.sn-agency-card__media img {
+.sn-agency-card__visual img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
+    transform: scale(0.88);
+    transform-origin: center center;
+    transition: transform 0.4s ease;
 }
-.sn-agency-card__media::after {
+.sn-agency-card--pro:hover .sn-agency-card__visual img {
+    transform: scale(0.92);
+}
+.sn-agency-card__visual::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(10, 26, 69, 0.55), transparent 50%);
+    background: linear-gradient(to top, rgba(10, 26, 69, 0.82) 0%, rgba(10, 26, 69, 0.15) 55%, transparent 100%);
 }
-.sn-agency-card__city {
+.sn-agency-card__index {
     position: absolute;
-    bottom: 0.75rem;
-    left: 1rem;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--white);
+    background: var(--primary);
+    padding: 0.35rem 0.65rem;
+    border-radius: var(--radius-sm);
+}
+.sn-agency-card__headline {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 1.25rem 1.5rem;
+}
+.sn-agency-card__headline h3 {
+    margin: 0 0 0.25rem;
     color: var(--white);
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: var(--text-lg);
-    margin: 0;
-    z-index: 1;
+    font-size: 1.5rem;
 }
-.sn-agency-card__body {
-    padding: 1.25rem 1.25rem 1.5rem;
+.sn-agency-card__region {
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.85);
 }
-.sn-agency-card__hours {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1rem;
-}
-.sn-agency-card__hours li {
+.sn-agency-card__content {
+    padding: 1.5rem;
     display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+.sn-agency-card__schedule {
+    display: grid;
+    gap: 0.75rem;
+}
+.sn-agency-card__slot {
+    display: grid;
+    grid-template-columns: minmax(5.5rem, auto) 1fr;
+    gap: 0.5rem 1rem;
+    align-items: baseline;
+    padding: 0.75rem 1rem;
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--primary);
+}
+.sn-agency-card__slot-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--secondary);
+}
+.sn-agency-card__slot-label i {
+    color: var(--primary);
+    margin-right: 0.35rem;
+}
+.sn-agency-card__slot-value {
     font-size: var(--text-sm);
     color: var(--text);
-    margin-bottom: 0.5rem;
-}
-.sn-agency-card__hours li i {
-    color: var(--primary);
-    margin-top: 0.15rem;
-    width: 1rem;
-    flex-shrink: 0;
+    font-weight: 500;
 }
 .sn-agency-card__address {
+    margin: 0;
     font-size: var(--text-sm);
     color: var(--text-muted);
-    margin: 0;
-    line-height: 1.5;
+    line-height: 1.55;
+}
+.sn-agency-card__address i {
+    color: var(--primary);
+    margin-right: 0.35rem;
+}
+.sn-agency-card__cta {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    color: var(--primary);
+    text-decoration: none;
+    transition: gap 0.2s ease, color 0.2s ease;
+}
+.sn-agency-card__cta:hover {
+    color: var(--secondary);
+    gap: 0.75rem;
 }
 
 /* ---- Home services inline explorer ---- */
@@ -747,24 +921,6 @@
         min-width: 200px;
         flex-shrink: 0;
     }
-}
-
-/* ---- Team red social icons ---- */
-.sn-team .team-overlay {
-    background: rgba(255, 255, 255, 0.92);
-}
-.sn-team .team-overlay .btn-square {
-    color: var(--primary);
-    background: var(--white);
-    border: 1px solid var(--border);
-}
-.sn-team .team-overlay .btn-square:hover {
-    background: var(--primary);
-    color: var(--white);
-    border-color: var(--primary);
-}
-.sn-team .team-overlay .btn-square i {
-    color: inherit;
 }
 
 /* ---- Tarif validity label ---- */

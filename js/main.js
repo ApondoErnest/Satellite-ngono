@@ -16,12 +16,11 @@
     new WOW().init();
 
 
-    // Sticky header
+    // Sticky chrome scroll state
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 80) {
-            $('.sn-header.sticky-top, .sticky-top').css({ top: '0px', boxShadow: '0 4px 16px rgba(10,26,69,0.1)' });
-        } else {
-            $('.sn-header.sticky-top, .sticky-top').css({ top: '0px', boxShadow: '' });
+        var $chrome = $('.sn-site-chrome');
+        if ($chrome.length) {
+            $chrome.toggleClass('is-scrolled', $(this).scrollTop() > 24);
         }
     });
     
