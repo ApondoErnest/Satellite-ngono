@@ -1,0 +1,97 @@
+/**
+ * Satellite Ngono — page-specific styles
+ */
+
+/* Legacy class bridges */
+.agence { color: var(--text); }
+.about { color: var(--text); }
+.description {
+    text-align: justify;
+    color: var(--text-muted);
+}
+.roadworthiness {
+    text-align: center;
+    margin: 0 auto 2rem;
+    max-width: 800px;
+    color: var(--text-muted);
+}
+
+/* Service section (legacy .service) */
+.service .nav .nav-link {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    transition: background 0.2s, border-color 0.2s;
+}
+.service .nav .nav-link.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Facts → stats override when using .fact class */
+.fact.sn-stats,
+.sn-stats.fact {
+    background: var(--secondary);
+}
+.fact:not(.sn-stats) {
+    background: var(--secondary);
+}
+
+/* Booking band */
+.booking {
+    background: linear-gradient(135deg, rgba(10, 26, 69, 0.95), rgba(10, 26, 69, 0.85)),
+        url(../img/carousel-bg-2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/* Footer legacy */
+.footer.sn-footer,
+.sn-footer.footer {
+    background: var(--secondary);
+}
+
+/* Page header backgrounds per page — set inline on elements */
+.page-header {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Tarif grid alignment */
+.sn-tarif-grid .sn-price-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contact form */
+.sn-contact-form .form-control,
+.sn-contact-form .form-select {
+    border-radius: var(--radius-sm);
+    border-color: var(--border);
+}
+.sn-contact-form .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(196, 16, 32, 0.15);
+}
+
+/* About experience badge */
+.sn-experience-badge {
+    background: var(--primary) !important;
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem !important;
+}
+.sn-experience-badge h1,
+.sn-experience-badge h4 {
+    color: var(--white) !important;
+}
+
+/* Spinner — hide quickly for return visits */
+body.sn-loaded #spinner {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ConveyThis widget spacing */
+.conveythis-widget-main {
+    margin-left: 0.5rem;
+}

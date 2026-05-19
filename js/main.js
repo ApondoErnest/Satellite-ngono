@@ -16,12 +16,12 @@
     new WOW().init();
 
 
-    // Sticky Navbar
+    // Sticky header
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.sticky-top').css('top', '0px');
+        if ($(this).scrollTop() > 80) {
+            $('.sn-header.sticky-top, .sticky-top').css({ top: '0px', boxShadow: '0 4px 16px rgba(10,26,69,0.1)' });
         } else {
-            $('.sticky-top').css('top', '-100px');
+            $('.sn-header.sticky-top, .sticky-top').css({ top: '0px', boxShadow: '' });
         }
     });
     
