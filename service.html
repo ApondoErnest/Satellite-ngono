@@ -116,156 +116,114 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl service py-5">
+    <section class="sn-section sn-home-services sn-services-page" aria-labelledby="services-title">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-primary text-uppercase">// Le Contrôle Technique Automobile //</h6>
-                <h1 class="mb-5">Un Contrôle Technique automobile de qualité comprend les tests suivants</h1>
+            <div class="sn-section-header text-center">
+                <span class="sn-section-label">// Le Contrôle Technique Automobile //</span>
+                <h2 id="services-title">Un Contrôle Technique automobile de qualité comprend les tests suivants</h2>
             </div>
-            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="row g-4">
                 <div class="col-lg-4">
-                    <div class="nav w-100 nav-pills me-4 sn-service-nav">
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-1.1 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <i class='fi fi-ss-steering-wheel me-3' style='font-size: 30px;'></i>
-                            <h4 class="m-0">RIPAGE</h4>
+                    <div class="sn-service-picker" role="tablist">
+                        <button type="button" class="sn-service-picker__btn active" data-service="ripage" role="tab" aria-controls="detail-ripage" aria-selected="true">
+                            <span class="sn-service-picker__icon"><i class="fa fa-dharmachakra"></i></span>
+                            <span><h5 class="mb-0 text-uppercase">RIPAGE</h5></span>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-1.1 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <i class="fa fa-cog fa-2x me-3"></i>
-                            <h4 class="m-0">FREINAGE</h4>
+                        <button type="button" class="sn-service-picker__btn" data-service="freinage" role="tab" aria-controls="detail-freinage">
+                            <span class="sn-service-picker__icon"><i class="fa fa-cog"></i></span>
+                            <span><h5 class="mb-0 text-uppercase">FREINAGE</h5></span>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-1.1 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <i class="fa fa-car-side fa-2x me-3"></i>
-                            <h4 class="m-0">SUSPENSION</h4>
+                        <button type="button" class="sn-service-picker__btn" data-service="suspension" role="tab" aria-controls="detail-suspension">
+                            <span class="sn-service-picker__icon"><i class="fa fa-car-side"></i></span>
+                            <span><h5 class="mb-0 text-uppercase">SUSPENSION</h5></span>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-1.1 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <i class="fa fa-oil-can fa-2x me-3"></i>
-                            <h4 class="m-0">POLLUTION</h4>
+                        <button type="button" class="sn-service-picker__btn" data-service="pollution" role="tab" aria-controls="detail-pollution">
+                            <span class="sn-service-picker__icon"><i class="fa fa-oil-can"></i></span>
+                            <span><h5 class="mb-0 text-uppercase">POLLUTION</h5></span>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-1.1 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
-                            <i class="fa fa-lightbulb-o fa-2x me-3"></i>
-                            <h4 class="m-0">REGLOPHARE</h4>
+                        <button type="button" class="sn-service-picker__btn" data-service="reglophare" role="tab" aria-controls="detail-reglophare">
+                            <span class="sn-service-picker__icon"><i class="fa fa-lightbulb"></i></span>
+                            <span><h5 class="mb-0 text-uppercase">REGLOPHARE</h5></span>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-1.1 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
-                            <i class="fa fa-eye fa-2x me-3"></i>
-                            <h4 class="m-0">VISUELS</h4>
+                        <button type="button" class="sn-service-picker__btn" data-service="visuel" role="tab" aria-controls="detail-visuel">
+                            <span class="sn-service-picker__icon"><i class="fa fa-eye"></i></span>
+                            <span><h5 class="mb-0 text-uppercase">VISUELS</h5></span>
                         </button>
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div class="tab-content w-100">
-                        <div class="tab-pane fade show active" id="tab-pane-1">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/ripage1.jpg"
-                                             style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
-                                    <p class="mb-4">Le ripage est une opération qui fait partie du contrôle technique automobile. Cette procédure consiste à mesurer la différence de frottement entre les roues avant et arrière du véhicule. Cette mesure permet de déterminer si les roues sont correctement alignées et si le véhicule est apte à circuler sur la route en toute sécurité.</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
-                                    <a href="http://satellite-ngono/controle.html#ripage" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
-                                </div>
+                    <div class="sn-service-detail-panel" role="tabpanel">
+                        <article class="sn-service-detail active" id="detail-ripage">
+                            <img class="sn-service-detail__image" src="img/ripage1.jpg" alt="Ripage">
+                            <div class="sn-service-detail__body">
+                                <h3>17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
+                                <p class="mb-4">Le ripage est une opération qui fait partie du contrôle technique automobile. Cette procédure consiste à mesurer la différence de frottement entre les roues avant et arrière du véhicule. Cette mesure permet de déterminer si les roues sont correctement alignées et si le véhicule est apte à circuler sur la route en toute sécurité.</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
+                                <a href="controle.html#ripage" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-2">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/freinage.jpg"
-                                             style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
-                                    <p class="mb-4">Le processus de freinage pendant le contrôle technique est effectué pour s'assurer que le système de freinage d'un véhicule est en bon état de fonctionnement et qu'il peut arrêter le véhicule en toute sécurité en cas d'urgence.</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
-                                    <a href="http://satellite-ngono/controle.html#freinage" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
-                                </div>
+                        </article>
+                        <article class="sn-service-detail" id="detail-freinage" hidden>
+                            <img class="sn-service-detail__image" src="img/freinage.jpg" alt="Freinage">
+                            <div class="sn-service-detail__body">
+                                <h3>17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
+                                <p class="mb-4">Le processus de freinage pendant le contrôle technique est effectué pour s'assurer que le système de freinage d'un véhicule est en bon état de fonctionnement et qu'il peut arrêter le véhicule en toute sécurité en cas d'urgence.</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
+                                <a href="controle.html#freinage" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-3">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/suspension.png"
-                                             style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
-                                    <p class="mb-4">Lors du contrôle technique d'un véhicule, le processus de suspension est une étape importante qui permet de vérifier la performance et l'état de toutes les caractéristiques de la suspension.</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
-                                    <a href="http://satellite-ngono/controle.html#suspension" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
-                                </div>
+                        </article>
+                        <article class="sn-service-detail" id="detail-suspension" hidden>
+                            <img class="sn-service-detail__image" src="img/suspension.png" alt="Suspension">
+                            <div class="sn-service-detail__body">
+                                <h3>17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
+                                <p class="mb-4">Lors du contrôle technique d'un véhicule, le processus de suspension est une étape importante qui permet de vérifier la performance et l'état de toutes les caractéristiques de la suspension.</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
+                                <a href="controle.html#suspension" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-4">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/analyseur-gaz.jpg"
-                                             style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
-                                    <p class="mb-4">Le processus de contrôle de la pollution vise à vérifier si le véhicule des gaz polluants au-dessus des normes réglementaires en vigueur. </p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
-                                    <a href="http://satellite-ngono/controle.html#pollution" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
-                                </div>
+                        </article>
+                        <article class="sn-service-detail" id="detail-pollution" hidden>
+                            <img class="sn-service-detail__image" src="img/analyseur-gaz.jpg" alt="Pollution">
+                            <div class="sn-service-detail__body">
+                                <h3>17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
+                                <p class="mb-4">Le processus de contrôle de la pollution vise à vérifier si le véhicule des gaz polluants au-dessus des normes réglementaires en vigueur.</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
+                                <a href="controle.html#pollution" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-5">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/reglophare.jpg"
-                                             style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
-                                    <p class="mb-4">Le processus de réglage des phares, également appelé réglophare, vise à vérifier si les phares du véhicule sont correctement alignés et orientés pour une sécurité maximale sur la route</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
-                                    <a href="http://satellite-ngono/controle.html#reglophare" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
-                                </div>
+                        </article>
+                        <article class="sn-service-detail" id="detail-reglophare" hidden>
+                            <img class="sn-service-detail__image" src="img/insp1.jpeg" alt="Réglophare">
+                            <div class="sn-service-detail__body">
+                                <h3>17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
+                                <p class="mb-4">Le processus de réglage des phares, également appelé réglophare, vise à vérifier si les phares du véhicule sont correctement alignés et orientés pour une sécurité maximale sur la route</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
+                                <a href="controle.html#reglophare" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-6">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/visuel.jpg"
-                                             style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
-                                    <p class="mb-4 ">Le processus de vérification visuelle vise à vérifier l'état général du véhicule, y compris ses éléments de sécurité, afin d'assurer une sécurité maximale sur la route.</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
-                                    <a href="http://satellite-ngono/controle.html#visuel" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
-                                </div>
+                        </article>
+                        <article class="sn-service-detail" id="detail-visuel" hidden>
+                            <img class="sn-service-detail__image" src="img/visuel.jpg" alt="Contrôle visuel">
+                            <div class="sn-service-detail__body">
+                                <h3>17 Années d'Expérience dans le domaine du Contrôle Technique</h3>
+                                <p class="mb-4">Le processus de vérification visuelle vise à vérifier l'état général du véhicule, y compris ses éléments de sécurité, afin d'assurer une sécurité maximale sur la route.</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Qualité de service</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Travail d'experts</p>
+                                <p><i class="fa fa-check text-success me-3"></i>Equipements modernes</p>
+                                <a href="controle.html#visuel" class="btn btn-primary py-3 px-5 mt-3">Voir plus<i class="fa fa-arrow-right ms-3"></i></a>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Service End -->
 
 <!--
@@ -399,6 +357,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/home-services.js"></script>
     <script src="js/sn-ui.js"></script>
 </body>
 
